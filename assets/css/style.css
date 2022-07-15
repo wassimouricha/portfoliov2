@@ -94,6 +94,10 @@ ul{
    list-style: none;
 }
 
+li{
+    list-style: none;
+}
+
 a{
     list-style: none;
 }
@@ -119,10 +123,98 @@ input{
 
 
 /*=============== Sidebar ===============*/
+.sidebar{
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    background-color: var(--body-color);
+    border-right: 1px solid var(--box-color);
+    list-style: none;
 
+}
 
+.nav__logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.8rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    text-align: center;
+    margin: auto;
+    list-style: none;
+}
+
+.nav__logo-text{
+    font-size: 1.125rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    line-height: 40px;
+    list-style: none;
+}
+
+.nav__menu{
+    position: fixed;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: left top;
+    width: 100vh;
+    list-style: none;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: -2px auto 0 auto ;
+
+}
+
+.nav__link{
+    height: 100%;
+    float: right;
+    line-height: 100px;
+    padding: 0 1rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    position: relative;
+    transition: .4s ;
+    list-style: none;
+}
+
+.btn__share {
+    position: absolute;
+    bottom: 1.8rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.social__share{
+    font-size: 1.5rem;
+}
 /* Active Link */
+.nav__link.active-link , .nav__link:hover{
+    color: var(--skin-color);
+}
 
+.nav__link.active-link::after, .nav__link:hover::after{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--skin-color);
+    border-radius: 50%;
+    bottom: 1.8rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
 /*=============== Main ===============*/
 
