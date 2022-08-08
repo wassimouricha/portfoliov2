@@ -216,17 +216,7 @@ input{
     list-style: none;
 }
 
-.btn__share {
-    position: absolute;
-    bottom: 1.8rem;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
 
-.social__share{
-    font-size: 1.5rem;
-}
 /* Active Link */
 .nav__link.active-link , .nav__link:hover{
     color: var(--skin-color);
@@ -498,8 +488,135 @@ margin-bottom: var(--mb-2-5);
     color: var(--skin-color);
 }
 
-/*===== Compétences  =====*/
 
+/*===== Compétences  =====*/
+.skills__container{
+    grid-template-columns: 360px 320px;
+    column-gap: 3rem;
+    justify-content: center;
+
+}
+
+.skills__header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skills__header:not(:last-child){
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills__icon,
+.skills__arrow{
+    font-size: 2rem;
+    color: var(--skin-color);
+}
+
+.skills__icon{
+margin-right: var(--mb-0-75);
+
+}
+
+.skills__title{
+    font-size: var(--h3-font-size);
+
+}
+
+.skills__subtitle{
+    font-size: var(--small-font-size);
+
+}
+
+.skills__arrow{
+    margin-left: auto;
+}
+
+.skills__list{
+row-gap: 1.8rem;
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage{
+    height: 5px;
+    border-radius: 0.25rem;
+
+}
+
+.skills__bar{
+    background-color: var(--box-color);
+}
+
+.skills__percentage{
+        display: block;
+        background-color: var(--skin-color);
+}
+
+.skills__active .skills__arrow{
+    transform: rotate(-90deg);
+    transition: .3s;
+}
+
+.skills [data-content] {
+    display: none;
+
+}
+
+.skills__active[data-content] {
+    display: block;
+}
+
+/* ===== SplashScreen  ===== */
+
+.intro{
+    position: fixed;
+    z-index: 1555;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.intrologoheader{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.logointro{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logointro.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+
+}
+
+.logointro.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
 
 /*===== Projet  =====*/
 
