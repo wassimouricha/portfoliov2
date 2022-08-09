@@ -54,12 +54,12 @@
 <main class="main"> 
 
     <!-- SplashScreen -->
-    <div class="intro">
+    <!-- <div class="intro">
         <h1 class="intrologoheader">
           <span class="logointro"> Bienvenue </span> <span class="logointro"> Sur</span> <span class="logointro"> Mon </span> <span class="logointro"> Portfolio </span> 
         </h1>
     
-    </div>
+    </div> -->
     <!-- Accueil -->
 
     <section class="home" id="home">
@@ -394,13 +394,94 @@
     </section>
 
     <!-- Mes réalisations -->
+    <section class="work section" id="work">
+            <h2 data-heading="Mon Portfolio" class="section__title">Mes travaux</h2>
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all" >Tous</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".mobile">Mobile</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix mobile">
+                    <img src="assets/img/newsapp.png" alt="Projet_1" class="work__img">
+                    <h3 class="work__title">News App V2</h3>
+                    <span class="work__button">Voir plus
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Application Mobile</h3>
+                        <p class="details__description">News Application réalisée en Flutter et avec une base de donnée Firebase , permettant de consulter les actualités du jours</p>
+                        <ui class="details__info">
+                            <li>Crée le - <span>10 mars 2022</span></li>
+                            <li>technologies utilisées - <span>Flutter</span></li>
+                            <li>Role - <span>Frontend et Backend </span></li>
+                            <li>Voir - <span><a href="https://github.com/wassimouricha/newsappwassim">Newsappwassim</a></span></li>
+                        </ui>
+                    </div>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/nba.png" alt="Projet_1" class="work__img">
+                    <h3 class="work__title">NBA info</h3>
+                    <span class="work__button">Voir plus
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Application Web</h3>
+                        <p class="details__description">Projet de fin d'études permettant de réserver des places en salon VIP </p>
+                        <ui class="details__info">
+                            <li>Crée le - <span>10 juin 2022</span></li>
+                            <li>technologies utilisées - <span>HTML CSS Javascript Jquery Php MySql PhpMyadmin</span></li>
+                            <li>Role - <span>Frontend et Backend </span></li>
+                            <li>Voir - <span><a href="https://github.com/wassimouricha/NBAinfo">NBA info</a></span></li>
+                        </ui>
+                    </div>
+                </div>
+                <div class="work__card mix mix web">
+                    <img src="assets/img/newsapp.png" alt="Projet_1" class="work__img">
+                    <h3 class="work__title">News App V2</h3>
+                    <span class="work__button">Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Application Mobile</h3>
+                        <p class="details__description">News Application réaliser en Flutter et avec une base de donnée Firebase , permettant de consulter les actualités du jours</p>
+                        <ui class="details__info">
+                            <li>Crée le - <span>10 mars 2022</span></li>
+                            <li>technologies utilisées - <span>Flutter</span></li>
+                            <li>Role - <span>Frontend et Backend </span></li>
+                            <li>Voir - <span><a href="https://github.com/wassimouricha/newsappwassim">Newsappwassim</a></span></li>
+                        </ui>
+                    </div>
+                </div>
+                <div class="work__card mix web">
+                    <img src="assets/img/newsapp.png" alt="Projet_1" class="work__img">
+                    <h3 class="work__title">News App V2</h3>
+                    <span class="work__button">Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Application Mobile</h3>
+                        <p class="details__description">News Application réaliser en Flutter et avec une base de donnée Firebase , permettant de consulter les actualités du jours</p>
+                        <ui class="details__info">
+                            <li>Crée le - <span>10 mars 2022</span></li>
+                            <li>technologies utilisées - <span>Flutter</span></li>
+                            <li>Role - <span>Frontend et Backend </span></li>
+                            <li>Voir - <span><a href="https://github.com/wassimouricha/newsappwassim">Newsappwassim</a></span></li>
+                        </ui>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Portfolio Popup -->
 
 </main>
 
 <!-- Footer -->
 
-    <!-- filter -->
-    <script src=""></script>
+    <!-- mixitup filter va me permettre de filter mes cartes -->
+    <script src="assets/js/mixitup.min.js"></script>
      <!-- Swiper js -->
      <script src=""></script>
       <!-- Main js -->
