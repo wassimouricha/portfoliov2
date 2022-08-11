@@ -127,13 +127,14 @@ function portfolioItemDetails(portfolioItem) {
 }
 
 
+
 // Fonction Pour les fenetres services
 const modalViews = document.querySelectorAll('.services__modal'),
   modalBtns = document.querySelectorAll('.services__content'),
   modalCloses = document.querySelectorAll('.services__modal-close')
 
   let modal = function(modalClick) {
-    modalViews[modalClick].classList.add('active-modal')
+    modalViews[modalClick].classList.toggle('active-modal')
   }
 
 
@@ -143,11 +144,11 @@ const modalViews = document.querySelectorAll('.services__modal'),
     })
   })
 
+  
+
 modalCloses.forEach((modalClose) => {
   modalClose.addEventListener("click", () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove('active-modal')
-    })
+      modal()
   })
 })
 
