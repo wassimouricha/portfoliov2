@@ -98,3 +98,55 @@ function activeWork() {
 }
 
 linkWork.forEach(l=> l.addEventListener("click" , activeWork))
+
+
+// Fonction Pour les fenetres popup
+
+// Fonction pour ouvrir la fenetre popup
+document.addEventListener("click" , (e) => {
+  if(e.target.classList.contains("work__button")) {
+    togglePorfolioPopup();
+    portfolioItemDetails(e.target.parentElement);
+  }
+})
+
+function togglePorfolioPopup() {
+  document.querySelector(".portfolio__popup").classList.toggle("open");
+}
+
+// fonction pour fermer la fenetre popup
+
+document.querySelector(".portfolio__popup-close").addEventListener("click" , togglePorfolioPopup);
+
+// fonction pour changer l'image et les informations en fonction de l'article cliqué 
+
+function portfolioItemDetails(portfolioItem) {
+  document.querySelector(".pp__thumbnail img").src = portfolioItem.querySelector(".work__img").src;
+  document.querySelector(".portfolio__popup-subtitle span ").innerHTML = portfolioItem.querySelector(".work__title").innerHTML;
+  document.querySelector(".portfolio__popup-body  ").innerHTML = portfolioItem.querySelector(".portfolio__item-details").innerHTML;
+}
+
+
+// Fonction Pour les fenetres services
+const modalViews = document.querySelectorAll('.services__modal'),
+  modalBtns = document.querySelectorAll('.services__content'),
+  modalCloses = document.querySelectorAll('.services__modal-close')
+
+  let modal = function(modalClick) {
+    modalViews[modalClick].classList.add('active-modal')
+  }
+
+
+  modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click' , () => {
+      modal(i)
+    })
+  })
+
+modalCloses.forEach((modalClose) => {
+  modalClose.addEventListener("click", () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove('active-modal')
+    })
+  })
+})
