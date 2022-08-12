@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Unicons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>PortfolioV2 - Wassim Bouricha</title>
@@ -55,12 +57,12 @@
 <main class="main"> 
 
     <!-- SplashScreen -->
-    <div class="intro">
+    <!-- <div class="intro">
         <h1 class="intrologoheader">
           <span class="logointro"> Bienvenue </span> <span class="logointro"> Sur</span> <span class="logointro"> Mon </span> <span class="logointro"> Portfolio </span> 
         </h1>
     
-    </div>
+    </div> -->
     <!-- Accueil -->
 
     <section class="home" id="home">
@@ -555,6 +557,60 @@
         </div>
     </section>
 
+    <!-- Témoignages -->
+    <section class="testimonials section">
+        <h2 data-heading="Mes clients disent de moi..." class="section__title">Témoignages </h2>
+        
+            <div class="testimonials__container  container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class='bx bxs-quote-left' ></i>
+                        </div>
+                        <p class="testimonial__description">Très content de l'interface utilisateur réalisé pour mon application mobile.</p>
+                        <h3 class="testimonial__date">29 Juillet 2022</h3>
+                        <div class="testimonial__profile">
+                            <img src="assets/img/profile1.jpg" alt="Profile__1" class="testimonial__profile-img">
+                            <div class="testimonial__profil-data">
+                                <span class="testimonial__profile-name">José-Luis</span>
+                                <span class="testimonial__profile-detail">- Coach Sportif</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class='bx bxs-quote-left' ></i>
+                        </div>
+                        <p class="testimonial__description">Projet réalisé en deux mois seulement , j'utilise l'application News Tous les jours !</p>
+                        <h3 class="testimonial__date">17 Mai 2022</h3>
+                        <div class="testimonial__profile">
+                            <img src="assets/img/profile2.jpg" alt="Profile__1" class="testimonial__profile-img">
+                            <div class="testimonial__profil-data">
+                                <span class="testimonial__profile-name">Théo</span>
+                                <span class="testimonial__profile-detail">- Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class='bx bxs-quote-left' ></i>
+                        </div>
+                        <p class="testimonial__description">Mon site vitrine à été rendu en moins d'un mois ! j'en suis très heureuse</p>
+                        <h3 class="testimonial__date">23 Avril 2022</h3>
+                        <div class="testimonial__profile">
+                            <img src="assets/img/profile3.jpg" alt="Profile__1" class="testimonial__profile-img">
+                            <div class="testimonial__profil-data">
+                                <span class="testimonial__profile-name">Yasmine</span>
+                                <span class="testimonial__profile-detail">- Cliente</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+    
+            </div>
+    </section>
+
     <!-- footer -->
     <footer class="footer">
         <div class="footer__bg">
@@ -587,7 +643,7 @@
     <!-- mixitup filter va me permettre de filter mes cartes -->
     <script src="assets/js/mixitup.min.js"></script>
      <!-- Swiper js -->
-     <script src=""></script>
+     <script src="assets/js/swiper-bundle.min.js"></script>
       <!-- Main js -->
     <script src="assets/js/main.js"></script>
 </body>
