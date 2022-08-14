@@ -162,7 +162,7 @@ input{
 }
 
 
-.nav__logo{
+/* .nav__logo{
     position: absolute;
     left: 0;
     right: 0;
@@ -170,19 +170,12 @@ input{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--skin-color);
+    background-image: url('');
     text-align: center;
     margin: auto;
     list-style: none;
-}
+} */
 
-.nav__logo-text{
-    font-size: 1.125rem;
-    color: var(--title-color);
-    font-weight: var(--font-bold);
-    line-height: 40px;
-    list-style: none;
-}
 
 .nav__menu{
     position: fixed;
