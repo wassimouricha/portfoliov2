@@ -1145,6 +1145,7 @@ background-color: var(--skin-color);
 
     .nav__toggle {
         display: flex;
+        z-index: 999;
     }
 
     .main {
